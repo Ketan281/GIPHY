@@ -1,0 +1,137 @@
+.App {
+    text-align: center;
+  }
+  
+  .error {
+    color: #b50000;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  
+  .input-field {
+    font-size: 20px;
+    vertical-align: middle;
+    transition: .5s;
+    border-width: 2px;
+    margin: 5px;
+  }
+  
+  .input-field:focus {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    outline: none;
+  }
+  
+  .input-field:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
+  }
+  
+  .submit-btn {
+    background-color: rgb(19, 209, 235);
+    color: #fff;
+    padding: 6px 30px;
+    vertical-align: middle;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: rgb(10, 130, 146);
+  }
+  
+  .text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gif-item {
+    flex-basis: 19%;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .gif-item {
+      flex-basis: 31%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .gif-item {
+      flex-basis: 48%;
+    }
+  }
+  * {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+  body {
+    background:#222;
+    font-family:"Raleway",sans-serif;
+  }
+  .header {
+    width:100%;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+  }
+  .header > div {
+    border:10px solid #aaa;
+  }
+  .header > div input {
+    padding:10px;
+    width:400px;
+    border:none;
+    outline:none;
+  }
+  .header > div button {
+    height:100%;
+    border-radius:0px;
+    border:none;
+    /* outine:none; */
+    padding:0px 10px; 
+    background:#00acee;
+    color:#f5f5f5;
+    font-weight:600;
+  }
+  .result {
+    padding:20px;
+  }
+  .result .list {
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .result .list .item {
+    margin:10px;
+    height:210px;
+    border:5px solid #aaa;
+  }
+  .result .list .item img {
+    width:100%;
+  }
+  .loading {
+    display:flex;
+    justify-content:center;
+  }
+  .loading .loader {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:5px solid #fff;
+    border-top:5px solid #111;
+    transform:rotate(0deg);
+    animation:loading 500ms ease-in-out infinite;
+  }
+  @keyframes loading {
+    to {
+      transform:rotate(360deg);
+    }
+  }
